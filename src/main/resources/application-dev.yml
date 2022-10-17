@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: ddmusicServer
+  datasource:
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ddmusic?characterEncoding=utf-8&serverTimezone=UTC
+server:
+  port: 8000
+mybatis:
+  config-location: classpath:/mybatis/mybatis-config.xml
+  mapper-locations: classpath:/mybatis/mapper/*.xml
